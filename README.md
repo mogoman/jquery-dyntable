@@ -27,6 +27,7 @@ Example:
         </tr>
     </thead>
 
+
 3. to head <tbody><td> add the same data-content attribute as in the header
 
 Example:
@@ -48,7 +49,7 @@ Example:
             <td>Jones</td>
         </tr>
     </tbody>
-    
+
 4. Include the JS and set the table up:
 
     $('#table1').dyntable({ 'ajaxUrl': '/ajax/form/post/path/' });
