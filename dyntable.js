@@ -9,6 +9,7 @@
             html += '<button class="btn btn-primary columns">Spalten</button>';
             html += '<button class="btn dropdown-toggle  btn-primary" data-toggle="dropdown"><span class="caret"></span></button>';
             html += '<ul class="dropdown-menu">';
+            // Thanks bradvin / FooTable for this great way of finding the headers
             $table.find('> thead > tr:last-child > th, > thead > tr:last-child > td').each(function() {
                 if ($(this).attr('data-desc')) {
                     html += '<li>&nbsp;&nbsp;&nbsp;';
