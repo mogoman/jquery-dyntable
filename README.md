@@ -19,37 +19,36 @@ Usage
 
 Example:
 
-    <thead>
-        <tr>
-            <th data-content="id" data-desc="ID">ID</th>
-            <th data-content="firstname" data-desc="First Name">Person name</th>
-            <th>Last Name</th><!-- this column cannot be hidden, so leave data-content and data-desc off -->
-        </tr>
-    </thead>
-
+        <thead>
+            <tr>
+                <th data-content="id" data-desc="ID">ID</th>
+                <th data-content="firstname" data-desc="First Name">Person name</th>
+                <th>Last Name</th><!-- this column cannot be hidden, so leave data-content and data-desc off -->
+            </tr>
+        </thead>
 
 3. to head <tbody><td> add the same data-content attribute as in the header
 
 Example:
 
-    <tbody>
-        <tr>
-            <td data-content="id">1</td>
-            <td data-content="firstname">Mac</td>
-            <td>McMillan</td>
-        </tr>
-        <tr>
-            <td data-content="id">2</td>
-            <td data-content="firstname">Sam</td>
-            <td>Scott</td>
-        </tr>
-        <tr>
-            <td data-content="id">3</td>
-            <td data-content="firstname">Jim</td>
-            <td>Jones</td>
-        </tr>
-    </tbody>
+        <tbody>
+            <tr>
+                <td data-content="id">1</td>
+                <td data-content="firstname">Mac</td>
+                <td>McMillan</td>
+            </tr>
+            <tr>
+                <td data-content="id">2</td>
+                <td data-content="firstname">Sam</td>
+                <td>Scott</td>
+            </tr>
+            <tr>
+                <td data-content="id">3</td>
+                <td data-content="firstname">Jim</td>
+                <td>Jones</td>
+            </tr>
+        </tbody>
 
 4. Include the JS and set the table up:
 
-    $('#table1').dyntable({ 'ajaxUrl': '/ajax/form/post/path/' });
+        $('#table1').dyntable({ 'ajaxUrl': '/ajax/form/post/path/' });
