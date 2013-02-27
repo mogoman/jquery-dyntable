@@ -1,12 +1,16 @@
-(function( $ ){
+(function( $, w ){
 
     var methods = {
         init : function( options ) {
+            var btnText = "Spalten";
+            if (options.btnText && options.btnText.length > 0) {
+                btnText = options.btnText;
+            }
             var $table = $(this);
             var html = '';
             html += '<form action="' + options.ajaxUrl + '" method="POST">';
             html += '<div class="btn-group pull-right">';
-            html += '<button class="btn btn-primary columns">Spalten</button>';
+            html += '<button class="btn btn-primary columns">' + btnText + '</button>';
             html += '<button class="btn dropdown-toggle  btn-primary" data-toggle="dropdown"><span class="caret"></span></button>';
             html += '<ul class="dropdown-menu">';
             // Thanks bradvin / FooTable for this great way of finding the headers
