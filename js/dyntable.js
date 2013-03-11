@@ -34,6 +34,12 @@
             html += '<br>';
             $table.before(html);
 
+            // do an initial hide of elements that contain data-hide=all and cascade to all td
+            $("#" + $table.attr('id')).find('[data-hide="all"]').each(function() {
+                var toggle = $(this).attr('data-desc');
+                $("#" + $table.attr('id')).find('[data-desc="' + toggle + '"]').hide();
+            });
+
             $(".columns").bind('click', function() {
                 return false;
             });
